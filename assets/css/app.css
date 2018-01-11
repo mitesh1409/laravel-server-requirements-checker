@@ -1,0 +1,12 @@
+.passed-badge, .failed-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    color: #eceff1;
+    border-radius: 10px;
+}
+.passed-badge {
+    background-color: #1b5e20;
+}
+.failed-badge {
+    background-color: #b71c1c;
+}
