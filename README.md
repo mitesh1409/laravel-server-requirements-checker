@@ -1,6 +1,13 @@
 # Laravel System Requirements Checker
 Check whether your server satisfies all the requirements to run Laravel 5.5
 
+## How It Works
+Do git clone of this repo inside your server's root directory and then execute it.
+
+For example using Apache server on Ubuntu 16.04, do git clone of this repo inside "var/www/html".
+It will create an app folder named "laravel-system-requirements-checker".
+Now you can run this using the url "http://localhost/laravel-system-requirements-checker/".
+
 ## Developed By
 Mitesh Prajapati
 
