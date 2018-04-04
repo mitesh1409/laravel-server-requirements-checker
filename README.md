@@ -1,5 +1,5 @@
-# Laravel System Requirements Checker
-Check whether your server satisfies all the requirements to run Laravel 5.5
+# Laravel Server Requirements Checker
+Check if your server satisfies all the requirements to run the specific Laravel version.
 
 ## How It Works
 Do git clone of this repo inside your server's root directory and then execute it.
