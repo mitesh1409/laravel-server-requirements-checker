@@ -15,6 +15,43 @@ class ServerRequirements
     private function setRequirements()
     {
         $requirementsData = [
+            // Laravel 5.4 server requirements
+            '5.4' => [
+                'php' => [
+                    'min-version' => '5.6.4',
+                    'description' => 'PHP >= 5.6.4',
+                    'passed' => false,
+                ],
+
+                'extensions' => [
+                    'openssl' => [
+                        'name' => 'OpenSSL',
+                        'description' => 'OpenSSL PHP Extension',
+                        'passed' => false,
+                    ],
+                    'pdo' => [
+                        'name' => 'PDO',
+                        'description' => 'PDO PHP Extension',
+                        'passed' => false,
+                    ],
+                    'mbstring' => [
+                        'name' => 'Mbstring',
+                        'description' => 'Mbstring PHP Extension',
+                        'passed' => false,
+                    ],
+                    'tokenizer' => [
+                        'name' => 'Tokenizer',
+                        'description' => 'Tokenizer PHP Extension',
+                        'passed' => false,
+                    ],
+                    'xml' => [
+                        'name' => 'XML',
+                        'description' => 'XML PHP Extension',
+                        'passed' => false,
+                    ],
+                ],
+            ],
+
             // Laravel 5.5 server requirements
             '5.5' => [
                 'php' => [

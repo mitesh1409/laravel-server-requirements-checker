@@ -25,6 +25,7 @@
                 <div class="input-field col s6">
                     <select name="version">
                         <option value="" disabled selected>Choose your option</option>
+                        <option value="5.4">5.4</option>
                         <option value="5.5">5.5</option>
                         <option value="5.6">5.6</option>
                     </select>
