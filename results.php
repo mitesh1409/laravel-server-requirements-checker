@@ -1,72 +1,82 @@
-<?php require_once('app-header.php'); ?>
+<?php require_once 'app-header.php'; ?>
 
 <div class="container">
-	<div class="row">
-		<div class="col s12">
-			<h3>Results</h3>
+    <div class="row">
+        <div class="col s12">
+            <h3>Results</h3>
 
-			<div class="divider"></div>
+            <div class="divider"></div>
 
-			<?php
-			if ($requirementsSatisfied) { ?>
-				<p>Your server satisfies all the requirements to run Laravel <?php echo $laravelVersion; ?>.</p>
-				<p>Get started by <a href="https://laravel.com/docs/<?php echo $laravelVersion; ?>" target="_blank">installing the Laravel application</a>.</p>
-			<?php
-			} else { ?>
-				<p>Your server is missing some requirements to run Laravel <?php echo $laravelVersion; ?>.</p>
-			<?php
-			} ?>
+            <?php
+            if ($requirementsSatisfied) {
+                ?>
+                <p>
+                    Your server satisfies all the requirements to run Laravel <?php echo $laravelVersion; ?>.
+                </p>
 
-			<table class="highlight">
-				<thead>
-					<tr>
-						<th>Requirement</th>
-						<th>Satisfied?</th>
-					</tr>
-				</thead>
+                <p>
+                    Get started by <a href="https://laravel.com/docs/<?php echo $laravelVersion; ?>" target="_blank">installing the Laravel application</a>.
+                </p>
+            <?php
+            } else {
+                ?>
+                <p>
+                    Your server is missing some requirements to run Laravel <?php echo $laravelVersion; ?>.
+                </p>
+            <?php
+            } ?>
 
-				<tbody>
-					<tr>
-						<td>
-							<?php echo $requirements["php"]["description"]; ?>
-						</td>
-						<td>
-							<?php 
-							if ($requirements["php"]["passed"]) {
-								echo '<span class="green-text darken-4">YES</span>';
-							} else {
-								echo '<span class="red-text darken-4">NO</span>';
-							} ?>
-						</td>
-					</tr>
+            <table class="highlight">
+                <thead>
+                    <tr>
+                        <th>Requirement</th>
+                        <th>Satisfied?</th>
+                    </tr>
+                </thead>
 
-					<?php
-					foreach ($requirements["extensions"] as $extension) { ?>
-						<tr>
-							<td>
-								<?php echo $extension["description"]; ?>
-							</td>
-							<td>
-								<?php
-								if ($extension["passed"]) {
-									echo '<span class="green-text darken-4">YES</span>';
-								} else {
-									echo '<span class="red-text darken-4">NO</span>';
-								} ?>
-							</td>
-						</tr>
-					<?php
-					} ?>
-				</tbody>
-			</table>
-		</div>
-	</div>
+                <tbody>
+                    <tr>
+                        <td>
+                            <?php echo $requirements['php']['description']; ?>
+                        </td>
+                        <td>
+                            <?php
+                            if ($requirements['php']['passed']) {
+                                echo '<span class="green-text darken-4">YES</span>';
+                            } else {
+                                echo '<span class="red-text darken-4">NO</span>';
+                            } ?>
+                        </td>
+                    </tr>
 
-	<div class="row">
-		<div class="col s12">
-			<a class="waves-effect waves-light btn" href="index.php">BACK TO HOME</a>
-		</div>
-	</div>
+                    <?php
+                    foreach ($requirements['extensions'] as $extension) {
+                        ?>
+                        <tr>
+                            <td>
+                                <?php echo $extension['description']; ?>
+                            </td>
+                            <td>
+                                <?php
+                                if ($extension['passed']) {
+                                    echo '<span class="green-text darken-4">YES</span>';
+                                } else {
+                                    echo '<span class="red-text darken-4">NO</span>';
+                                } ?>
+                            </td>
+                        </tr>
+                    <?php
+                    } ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <a class="waves-effect waves-light btn" href="index.php">BACK TO HOME</a>
+        </div>
+    </div>
 </div>
 
-<?php require_once('app-footer.php'); ?>
+<?php require_once 'app-footer.php';
