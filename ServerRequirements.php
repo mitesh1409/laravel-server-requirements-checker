@@ -135,6 +135,53 @@ class ServerRequirements
                     ],
                 ],
             ],
+
+            // Laravel 5.7 server requirements
+            '5.7' => [
+                'php' => [
+                    'min-version' => '7.1.3',
+                    'description' => 'PHP >= 7.1.3',
+                    'passed' => false,
+                ],
+
+                'extensions' => [
+                    'openssl' => [
+                        'name' => 'OpenSSL',
+                        'description' => 'OpenSSL PHP Extension',
+                        'passed' => false,
+                    ],
+                    'pdo' => [
+                        'name' => 'PDO',
+                        'description' => 'PDO PHP Extension',
+                        'passed' => false,
+                    ],
+                    'mbstring' => [
+                        'name' => 'Mbstring',
+                        'description' => 'Mbstring PHP Extension',
+                        'passed' => false,
+                    ],
+                    'tokenizer' => [
+                        'name' => 'Tokenizer',
+                        'description' => 'Tokenizer PHP Extension',
+                        'passed' => false,
+                    ],
+                    'xml' => [
+                        'name' => 'XML',
+                        'description' => 'XML PHP Extension',
+                        'passed' => false,
+                    ],
+                    'ctype' => [
+                        'name' => 'Ctype',
+                        'description' => 'Ctype PHP Extension',
+                        'passed' => false,
+                    ],
+                    'json' => [
+                        'name' => 'JSON',
+                        'description' => 'JSON PHP Extension',
+                        'passed' => false,
+                    ],
+                ],
+            ],
         ];
 
         $this->requirements = $requirementsData[$this->laravelVersion];

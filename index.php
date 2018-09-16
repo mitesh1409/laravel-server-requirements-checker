@@ -28,6 +28,7 @@
                         <option value="5.4">5.4</option>
                         <option value="5.5">5.5</option>
                         <option value="5.6">5.6</option>
+                        <option value="5.7">5.7</option>
                     </select>
                     <label>Laravel Version</label>
                 </div>
