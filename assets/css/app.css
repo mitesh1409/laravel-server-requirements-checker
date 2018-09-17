@@ -10,3 +10,7 @@
 .failed-badge {
     background-color: #b71c1c;
 }
+.result-message {
+    font-size: 18px;
+    padding: 10px;
+}

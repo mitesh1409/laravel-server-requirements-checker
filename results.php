@@ -10,8 +10,8 @@
             <?php
             if ($requirementsSatisfied) {
                 ?>
-                <p>
-                    Your server satisfies all the requirements to run Laravel <?php echo $laravelVersion; ?>.
+                <p class="result-message green lighten-3">
+                    <i class="material-icons dp48">check</i> Your server satisfies all the requirements to run Laravel <?php echo $laravelVersion; ?>.
                 </p>
 
                 <p>
@@ -20,8 +20,8 @@
             <?php
             } else {
                 ?>
-                <p>
-                    Your server is missing some requirements to run Laravel <?php echo $laravelVersion; ?>.
+                <p class="result-message red lighten-3">
+                    <i class="material-icons dp48">error</i> Your server is missing some requirements to run Laravel <?php echo $laravelVersion; ?>.
                 </p>
             <?php
             } ?>

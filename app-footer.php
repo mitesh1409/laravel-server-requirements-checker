@@ -5,7 +5,7 @@
                         <h5 class="white-text">Loved it?<br>Give a Star to this Github Repo</h5>
                         <ul>
                             <li>
-                                <a class="white-text" href="https://github.com/mitesh1409/laravel-system-requirements-checker" target="_blank">https://github.com/mitesh1409/laravel-system-requirements-checker</a>
+                                <a class="white-text" href="https://github.com/mitesh1409/laravel-server-requirements-checker" target="_blank">https://github.com/mitesh1409/laravel-server-requirements-checker</a>
                             </li>
                         </ul>
                     </div>
