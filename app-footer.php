@@ -21,9 +21,9 @@
                 </div>
             </div>
 
-            <div class="footer-copyright">
+            <div class="footer-copyright center-align">
                 <div class="container">
-                    Built by Mitesh Prajapati
+                    Built with <i class="tiny material-icons dp48">favorite_border</i> by <a href="https://github.com/mitesh1409" target="_blank">Mitesh Prajapati</a>.
                 </div>
             </div>
         </footer>

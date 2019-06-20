@@ -15,7 +15,7 @@
                 </p>
 
                 <p>
-                    Get started by <a href="https://laravel.com/docs/<?php echo $laravelVersion; ?>" target="_blank">installing the Laravel application</a>.
+                    Get started by <a href="https://laravel.com/docs/<?php echo $laravelVersion; ?>" target="_blank">installing the Laravel <?php echo $laravelVersion; ?> application</a>.
                 </p>
             <?php
             } else {
@@ -45,6 +45,7 @@
                                 echo '<span class="green-text darken-4">YES</span>';
                             } else {
                                 echo '<span class="red-text darken-4">NO</span>';
+                                echo '<br><span>Current PHP Version: ' . $currentPhpVersion . '</span>';
                             } ?>
                         </td>
                     </tr>
@@ -73,8 +74,14 @@
     </div>
 
     <div class="row">
-        <div class="col s12">
+        <div class="col s6">
             <a class="waves-effect waves-light btn" href="index.php">BACK TO HOME</a>
+        </div>
+        <div class="col s6">
+            <form action="checker.php" method="POST">
+                <input name="version" type="hidden" value="<?php echo $laravelVersion; ?>"/>
+                <button class="btn waves-effect waves-light" type="submit" name="action">RE-CHECK</button>
+            </form>
         </div>
     </div>
 </div>
